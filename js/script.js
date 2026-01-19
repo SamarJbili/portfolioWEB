@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    const currentPage = window.location.pathname.split('/').pop() || 'accueil.html';
     const navLinks = document.querySelectorAll('.nav-link');
     
     navLinks.forEach(link => {
         const href = link.getAttribute('href');
-        if (href === currentPage || (currentPage === '' && href === 'index.html')) {
+        if (href === currentPage || (currentPage === '' && href === 'accueil.html')) {
             link.classList.add('active');
         }
     });
@@ -21,18 +21,18 @@ if (document.getElementById('quiz-form')) {
     };
 
     const answerLabels = {
-        q1: { b: '&lt;a&gt;' },  // Caractères HTML échappés
+        q1: { b: '&lt;a&gt;' },  
         q2: { c: 'color' },
         q3: { a: 'getElementById()' },
-        q4: { b: '&lt;header&gt;' },  // Caractères HTML échappés
+        q4: { b: '&lt;header&gt;' },  
         q5: { b: '.test { }' },
         q6: { b: 'margin' },
         q7: { a: 'alert()' },
-        q8: { a: '&lt;table&gt;' },  // Caractères HTML échappés
+        q8: { a: '&lt;table&gt;' },  
         q9: { b: 'justify-content' },
         q10: { d: 'Toutes les réponses' },
-        q11: { b: '&lt;footer&gt;' },  // Caractères HTML échappés
-        q12: { b: '&lt;link rel="stylesheet" href="style.css"&gt;' },  // Caractères HTML échappés
+        q11: { b: '&lt;footer&gt;' }, 
+        q12: { b: '&lt;link rel="stylesheet" href="style.css"&gt;' },  
         q13: { b: 'onclick' },
         q14: { b: 'grid-template-columns' },
         q15: { b: 'push()' }
@@ -105,7 +105,7 @@ if (document.getElementById('contact-form')) {
         
         window.location.href = mailtoLink;
         
-        alert('Merci pour votre message ! Votre client email va s\'ouvrir.');
+        alert('Merci pour votre message ! Votre client email va souvrir.');
         contactForm.reset();
     });
 }
